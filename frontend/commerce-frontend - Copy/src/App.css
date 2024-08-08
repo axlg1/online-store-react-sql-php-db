@@ -1,0 +1,79 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.filter, .sort {
+  margin: 20px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  width: auto; 
+  text-align: left;
+  background: #c9c9c9;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+.product img {
+  width: 100%;
+  max-width: 250px;
+  height: 300px; /* Ajustez la hauteur selon vos besoins */
+  object-fit: contain; /* Utilisez cover si vous préférez remplir le conteneur */
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+
+.product .product-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.product button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #218838;
+}
+
+.cart {
+  margin: 20px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.cart-item {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.cart-item button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.cart-item button:hover {
+  background-color: #c82333;
+}
